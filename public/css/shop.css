@@ -1,0 +1,240 @@
+:root {
+  --primary: #e879f9;
+  --primary2: #b34dc5;
+  --bg: #1d1d27;
+  --bg2: #141418;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg2);
+  color: white;
+}
+
+.menu1 {
+  text-align: center;
+}
+
+.menu1 h1 {
+  font-size: 48px;
+  padding: 100px;
+}
+.about-col-2 {
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  flex-basis: 60%;
+}
+
+.about-col-2 p {
+  font-size: 20px;
+  font-weight: 100px;
+  color: white;
+  line-height: 1.5;
+  padding-top: 1%;
+}
+
+.tab-tittle {
+  display: flex;
+  margin: 100px 50px;
+  justify-content: center;
+}
+
+.tab-link {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s; /* Menambahkan efek transisi untuk background */
+  background: var(--bg2);
+  padding: 10px 80px; /* Menentukan lebar background dengan padding */
+}
+
+.tab-link.active-link {
+  background: var(--primary);
+  color: var(--bg2);
+}
+
+.tab-contents {
+  display: none;
+}
+
+/* Default styling */
+.tab-contents.active-tab {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 0px 5%; /* Mengganti padding menjadi persentase agar responsif */
+  max-width: 70%;
+  height: 100%;
+  margin: 0 auto; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+}
+
+.tab-contents img {
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-contents img:hover {
+  filter: brightness(50%);
+}
+
+.item-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.item-name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-price {
+  margin: 0;
+}
+/* Media query untuk layar berukuran lebih kecil */
+@media only screen and (max-width: 768px) {
+  .tab-contents.active-tab {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 20px;
+  }
+}
+
+.image-popup {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu p,
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 25rem;
+}
+
+footer .socials p {
+  margin-top: 3%;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #ffffff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+  color: var(--primary);
+}
+
+footer .links {
+  margin-bottom: 2rem;
+}
+
+footer .links a {
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+  margin: 0.5rem 0.5rem;
+}
+
+footer .credit a {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Media query untuk layar berukuran lebih kecil */
+/* Media query untuk layar berukuran lebih kecil */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Ukuran font secara umum diubah untuk mobile */
+  }
+
+  .about-col-2 {
+    font-size: 16px; /* Ukuran font di kolom tentang */
+  }
+
+  .tab-link {
+    font-size: 16px; /* Ukuran font pada link tab */
+  }
+
+  .tab-contents.active-tab {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 10px; /* Mengurangi padding pada konten tab */
+    max-width: 100%; /* Menggunakan seluruh lebar layar */
+  }
+
+  .tab-contents img {
+    margin-left: 0; /* Menghapus margin kiri pada gambar */
+    width: 100%; /* Mengisi lebar gambar sepenuhnya */
+    height: auto; /* Menggunakan tinggi gambar yang sesuai */
+  }
+
+  .item-container {
+    max-width: 100%; /* Menggunakan seluruh lebar layar pada item-container */
+  }
+
+  .item-info {
+    padding: 5px; /* Mengurangi padding pada item-info */
+    font-size: 14px; /* Ukuran font pada informasi item */
+  }
+
+  /* Menyesuaikan font dan padding pada bagian footer */
+  footer {
+    font-size: 14px;
+  }
+
+  footer .socials p {
+    margin-top: 2%;
+  }
+
+  footer .credit {
+    font-size: 0.7rem;
+    margin: 0.5rem 0.5rem;
+  }
+}
