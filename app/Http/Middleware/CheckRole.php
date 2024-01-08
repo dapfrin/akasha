@@ -8,12 +8,14 @@ use Illuminate\Support\Facades\Auth;
 
 class CheckRole
 {
-    public function handle(Request $request, Closure $next, $role)
+    public function handle($request, Closure $next, $role)
     {
-        if (Auth::check() && Auth::user()->role == $role) {
+        // Check if the user is authenticated and has the role "admin"
+        if (Auth::check() && Auth::user()->role == 'admin') {
             return $next($request);
         }
-
-        return redirect('/'); // Ganti dengan rute atau URL menuju halaman yang sesuai
+    
+        // If not authenticated or doesn't have the role "admin," redirect or handle it as needed
+        return redirect('/'); // Redirect to home or another page
     }
 }

@@ -63,6 +63,46 @@
             <p class="item-name">Ultramania</p>
             <p class="item-price">$79.99</p>
         </div>
+
+    </div>
+      <div class="item-container">
+        <a href="{{ route('purchase') }}">
+            <img src="/image/hoodie1.png" alt="">
+        </a>
+        <div class="item-info">
+            <p class="item-name">Red Devil</p>
+            <p class="item-price">$79.99</p>
+        </div>
+    </div>
+
+      <div class="item-container">
+        <a href="{{ route('purchase') }}">
+            <img src="/image/hoodie2.png" alt="">
+        </a>
+        <div class="item-info">
+            <p class="item-name">Tokyo Street</p>
+            <p class="item-price">$79.99</p>
+        </div>
+    </div>
+
+      <div class="item-container">
+        <a href="{{ route('purchase') }}">
+            <img src="/image/hoodie5.png" alt="">
+        </a>
+        <div class="item-info">
+            <p class="item-name">Harakiri</p>
+            <p class="item-price">$79.99</p>
+        </div>
+    </div>
+
+      <div class="item-container">
+        <a href="{{ route('purchase') }}">
+            <img src="/image/hoodie7.png" alt="">
+        </a>
+        <div class="item-info">
+            <p class="item-name">Love is Lie</p>
+            <p class="item-price">$79.99</p>
+        </div>
     </div>
     
         

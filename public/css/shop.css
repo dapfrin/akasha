@@ -1,7 +1,7 @@
 :root {
   --primary: #e879f9;
   --primary2: #b34dc5;
-  --bg: #1d1d27;
+  --background-image:'col1.jpg';
   --bg2: #141418;
 }
 * {
